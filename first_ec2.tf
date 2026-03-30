@@ -7,4 +7,5 @@ provider "aws" {
 # and Host Recovery enabled.
 resource "aws_ec2_host" "test" {
   instance_type     = "t2.micro"
+  availability_zone = "eu-north-1"
 }
